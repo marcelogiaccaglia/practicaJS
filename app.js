@@ -1,16 +1,19 @@
 // Instalacion y requerir Libreria externa (npm install)
 let moment = require("moment");
+
 console.log(moment().format("YYYY Do MMMM"));
 
 /*Requerir Libreria Core*/
 let fs = require("fs");
 const { dirname } = require("path");
 let texto = fs.readFileSync(__dirname + "/texto.txt", "utf-8" );
+
 console.log(texto);
 
 // Libreria Propia module.export
 let exportar = require ("./moduleExport/export.js");
 const { log } = require("console");
+
 console.log(exportar);
 
 /* Variables */
@@ -25,9 +28,16 @@ let stringQuotes = "Daniel dijo \"Hey como estan\".";                         /*
                                                                                      \b	    word boundary
                                                                                      \f	    form feed       */
 let stringQuotes2 = 'Daniel dijo "Hey como estan"';
+let fistPosition = stringQuotes2[1];
 var numb = 37;
 const BOLE = true;
-console.log(string, stringQuotes, stringQuotes2, numb, BOLE);
+
+console.log(string);
+console.log(stringQuotes);
+console.log(stringQuotes2);
+console.log(numb);
+console.log(BOLE);
+console.log(fistPosition);
 
 //Tipo de datos//
 let objetLit = {
@@ -37,7 +47,9 @@ let objetLit = {
 };
 
 let array = [true, 23, "casa"];
-console.log(objetLit.familia, array[2]);
+
+console.log(objetLit.familia);
+console.log(array[2]);
 
 //Datos especiales//
 let nan;
@@ -45,7 +57,10 @@ let nan;
 let nul = null;
 let undefin;
     undefin = undefin + "hola";
-console.log(nan, nul, undefin);
+
+console.log(nan);
+console.log(nul);
+console.log(undefin);
 
 //Operadores//
     // asigancion = //
@@ -57,7 +72,14 @@ let divi = 2 / 4;
 let incrementa = 3; // ++
 let decrementa = 2; // --
 let resto = 15 % 2;
-console.log (suma, resta, multi, divi, ++incrementa, --decrementa, resto);
+
+console.log (suma);
+console.log (resta);
+console.log (multi);
+console.log (divi);
+console.log (++incrementa);
+console.log (--decrementa);
+console.log (resto);
 
     //comparacion simple//
 let num1 = 42;
@@ -69,13 +91,20 @@ let compEstric = num1 === num2;
 let compEstricF = num1 !== num2;
 let comp1 = num1 <= num2;
 let comp2 = num1 >= num2;
-console.log(compSimple, compSimpleF, compEstric, compEstricF, comp1, comp2);
+
+console.log(compSimple);
+console.log(compSimpleF);
+console.log(compEstric);
+console.log(compEstricF);
+console.log(comp1);
+console.log(comp2);
 
 //Logicos//
 let respuesta;
 if (24>20 && 40>5) {           //and  true+true = true//
       respuesta = "verdad";
 };
+
 console.log(respuesta);
 
 if (24>20 || 20<3) {               //or false+true = true//
@@ -92,16 +121,19 @@ let texto2 = "mundo";
 let texto3 = "Hi"
 let textoTotal = texto1 + " " + texto2;
 texto3 += " mundo"; // tambien puede ser texto3 += texto2; //
-console.log(textoTotal, texto3);
+
+console.log(textoTotal);
+console.log(texto3);
 
 //Funciones//
-function presentacion (texto1, texto2) {     //Declarada//
-    return texto1 + " al " + texto2;
+function presentacion (tex1, tex2) {     //Declarada//
+    return tex1 + " al " + tex2;
 }
 
-let presentation = function (texto1="hi", texto2="world") {   //Expresada//
-    return texto1 + " a todo el " + texto2;
+let presentation = function (text1="hi", text2="world") {   //Expresada//
+    return text1 + " a todo el " + text2;
 }
-console.log(presentacion(), presentation());
+console.log(presentacion("Hola", "Mundo"));
+console.log(presentation("Hello", "Pais"));
 
 
