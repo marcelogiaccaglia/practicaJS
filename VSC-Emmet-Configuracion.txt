@@ -1,0 +1,82 @@
+
+-----------------    Visual Studio Code  -------------------------------
+
+Descargar ultima version, para modo portable descargar .zip
+
+Se puede levantar usuario (Sing in) con GitHub, grabando toda nuestra configuracion.
+
+Extenciones recomendadas:
+- Spanish Language
+- Live Server (para modificacion de Html en tiempo real)
+- Prettier - Code Formatter (para ayuda de identacion y detalles de codigo)
+- EsLint (ayuda en marcar errores)
+
+ShortCuts VSC
+
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf 
+
+Configuracion VSC
+- Archivo - Preferencias - Configuracion (aqui lo encontramos)
+1 - Auto Save - onFocusChange
+2 - wordWrap - on
+3 - Indetation - 2 space - automatic detect: false
+4 - Default Formatter - Prettier
+5 - FormatOnPaste (ok) - FormatOnSave (ok) - FormatOnType (ok)
+6 - LiveServer.sellingDoNot Verify Tags (ok)
+
+Ver JSON de configuraciones al final.....
+
+------------------------  EMMET -------------------------------
+
+Configuracion para uso en Java Script, con busqueda de Html dinamico
+
+Configuraion - emmet.include.languaje
+clave = Java Script - Valor = html
+
+
+ShortCuts para HTML
+
+! - Estructura Basica HTML
+
+tab - opciones
+
+nodos hijos - nav>ul>li>a
+
+nodos hermanos - div+article+section
+
+nodo superiores - nav>ul>li>a^li>p - () para agrupar contenido
+
+multiplicar - nav>ul>li*5>a
+
+id - nav#menu
+
+class - nav.indice
+
+atributos - nav>ul>li>a[target = "_blank"]
+
+elemento numerador - ul>li.item*$10 - iniciar en - $@101
+
+
+------ Configuraciones JSON -----
+
+{
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange",
+    "window.restoreWindows": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "emmet.includeLanguages": {
+      "javascript": "html"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  }
