@@ -2,7 +2,7 @@
 
 // El signo (=) se lo denomina de asigancion, con el mismo se le asigna valor a una variable //
 
-// ------ Arismeticos ----- //
+/* ----- Arismeticos ---- */ console.log("--Arismeticos--");
 
 let suma = 2 + 4;
 console.log(suma);
@@ -27,7 +27,7 @@ let resto =
   2; /* Obtenemos el resto de una division, en este ejemplo 2*7=14, sobra 1 */
 console.log(resto);
 
-// ----- Comparacion simple ------- //
+/* ---- Comparacion simple ----- */ console.log("--Comparacion simple--");
 
 let num1 = 42; /* El resultado sera siempre un Booleano */
 let num2 = "42";
@@ -54,7 +54,7 @@ console.log(comp1);
 let comp2 = num1 >= num2; /* mayor o igual a */
 console.log(comp2);
 
-// ------ Logicos -------- //
+/* ---- Logicos ------ */ console.log("--Logicos--");
 
 //(and) las dos comparaciones deben dar true, true+true = true//
 let respuesta;

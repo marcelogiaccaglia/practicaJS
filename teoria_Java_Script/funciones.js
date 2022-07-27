@@ -2,7 +2,8 @@
 
 /* Las funciones estan compuestas por un nombre, los parametros denominados argumentos, pudiendo no tener argumentos, y una ejecucion entre llaves */
 
-//Se denomina Declarada cuando se le da un nombre a la funcion//
+/* Se denomina Declarada cuando se le da un nombre a la funcion */
+console.log("--FUNCIONES--");
 
 function presentacion(tex1, tex2) {
   return tex1 + " al " + tex2;
@@ -31,6 +32,7 @@ function crear(num1, num2) {
 console.log(crear(num1, 3));
 
 /* ---- // ARROW FUNCTION // ---- */
+console.log("--ARROW FUNCTION--");
 
 /* Tiene una sintaxis mas compacta y siempre tiene q estar declarada dentro de una variable */
 
@@ -53,6 +55,7 @@ let mult = (num) => num * 3;
 console.log(mult(11));
 
 /* ------ // CALLBACK // ------- */
+console.log("--CALLBACK--");
 
 /* Es una funcion que se pasa como parametro de otra funcion */
 

@@ -3,14 +3,14 @@
 let adolec = [15, 17];
 let salida = {};
 
-/* Condicionales Simples */
+/* Condicionales Simples */ console.log("--Condicionales Simples--");
 
 if (adolec[0] >= 12 && adolec[0] <= 18) {
   salida.condicion = "Estas para la matine";
 }
 console.log(salida);
 
-/* Condicional else */
+/* Condicional else */ console.log("--Condicional else--");
 
 if (adolec[1] > 18 || adolec[0] == 17) {
   salida.alcohol = "Podes tomar alcohol";
@@ -19,7 +19,7 @@ if (adolec[1] > 18 || adolec[0] == 17) {
 }
 console.log(salida);
 
-/* Condicional else if */
+/* Condicional else if */ console.log("--Condicional else if--");
 
 if (adolec[1] > 18) {
   salida.alcoholLigth = "Podes tomar alcohol";
@@ -32,7 +32,9 @@ console.log(salida);
 
 /* ---------- // IF TERNARIO // --------------- */
 
-/* No se usa la palabra if ni else, y se recomienda agregar este condicional dentro de una variable */
+/* No se usa la palabra if ni else, y se recomienda agregar este condicional dentro de una variable */ console.log(
+  "--IF TERNARIO--"
+);
 
 // Sintaxis
 let resultado =
@@ -45,7 +47,7 @@ console.log(mayor);
 
 /* --------------// SWICH // ---------- */
 
-//Compuesto por una exprecion a evaluar
+/* Compuesto por una exprecion a evaluar */ console.log("--SWICH--");
 
 switch ("manzana") {
   case "pera": //codigo q se ejecuta si es True

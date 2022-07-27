@@ -1,6 +1,7 @@
 /* ----------------- // DESTRUCTURING // -------------- */
 
-/* ------- Destructuring de Objetos Literales -------- */
+/* ------- Destructuring de Arrays -------- */
+console.log("--Destructuring de Arrays--");
 
 //Desestructura un array y permite extraer sus elementos y luego incorporarlos a una variable a crear, No modifica el array original
 
@@ -16,6 +17,7 @@ console.log(colorAmarillo);
 console.log(colorVerde);
 
 /* ------- Destructuring de Objetos Literales -------- */
+console.log("--Destructuring de Objetos Literales--");
 
 //Desestructura un Objeto y extrae el valor de los elementos indicados y lo incorpora en una variable con el nombre q indiquemos, No modifica el Objeto original
 

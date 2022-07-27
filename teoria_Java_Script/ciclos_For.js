@@ -5,6 +5,7 @@
   for(variable de inicio, condicion, modificador){
       Codigo a ejecutar en cada repeticion;
       }; */
+console.log("--CICLO FOR--");
 
 let arr = [1, 3, 5, 7, 9, 11, 13, 15];
 let element = [];
@@ -19,6 +20,7 @@ console.log(element);
 /* --------- // WHILE // ------------ */
 
 /* Consta de dos partes, Condicion y bloque de codigo */
+console.log("--CICLO WHILE--");
 
 let contador = 0;
 
@@ -34,6 +36,7 @@ while (contador <= 5) {
 /* --------- // DO WHILE // -------------- */
 
 /* Primero ejecuta el codigo y luego evaluala condicion, en el caso de ser (true) nuevamente ejecuta el codigo */
+console.log("--CICLO DO WHILE--");
 
 let diaSemana = 1;
 
@@ -48,6 +51,7 @@ do {
 
 /* Solo para iterar sobre OBJETOS LITERALES */
 /* Sintaxis = for (let propiedad in objeto a iterar) */
+console.log("--CICLO FOR IN--");
 
 let persona = {
   nombre: "Guillermo",
@@ -66,6 +70,7 @@ for (const newPersona in persona) {
 
 /* Solo para iterar sobre array o string */
 /* Sintaxis = for(let variable of elemento) {} */
+console.log("--CICLO FOR OF--");
 
 let musicos = ["Charly", "Spinetta", "Fito"];
 

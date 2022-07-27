@@ -1,4 +1,6 @@
 /* -------  VARIABLES ---------- */
+console.log("--VARIABLES--");
+
 /* Las variables pueden contener cadenas de strings, arrays, objetos literales, numeros, booleanos 
 Los identificadores o nombres de una variable pueden inicia con letra, $, _, nunca con numero o otro caracter*/
 
@@ -57,7 +59,7 @@ CAMBIO.apellido =
   "Giaccaglia"; /* Forma de agregar un valor a un Objeto Literal */
 console.log(CAMBIO);
 
-// ----- Concateneacion ------ //
+/* // ----- Concateneacion ------ // */ console.log("--Concateneacion--");
 
 let texto1 = "hola";
 let texto2 = "mundo";
@@ -76,7 +78,7 @@ let union = [
 ]; /* Usando el Spread Operator para concatenar un array */
 console.log(union);
 
-// -------- TIPO DE DATOS ---------//
+/* // -------- TIPO DE DATOS ---------// */ console.log("--TIPO DE DATOS--");
 
 /* Los objetos estas compuestos de propiedades "clave : valor" o de metodos que 
   son funciones dentro de un objeto (Ver archivo Objeto Literal)*/
@@ -101,7 +103,7 @@ console.log(
   array[2]
 ); /*De esta forma podemos acceder a la posicion de un valor del array */
 
-// ----- Datos especiales -----//
+/* // ----- Datos especiales -----// */ console.log("--Datos especiales--");
 
 let nan;
 nan = nan + 2;
