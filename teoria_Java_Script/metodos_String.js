@@ -24,9 +24,17 @@ cadena de texto */
 console.log(nombre.trim);
 
 console.log("--SPLIT()--");
-/* Se debe enviar como parametro un separador, devuelve un array con partes del string original */
+/* Se debe enviar como parametro un separador, devuelve convertido en un ARRAY con partes del string original */
 console.log(nombre.split("."));
 
 console.log("--REPLACE()--");
 /* Se debe enviar como parametros un primer string a buscar y luego un string a remplazar, devuelve un string nuevo */
 console.log(nombre.replace("Marcelo", "Nicolas"));
+
+console.log("--TOUPPECASE()--");
+/* No se envia parametro para convertir la variable toda en mayuscula */
+console.log(nombre.toUpperCase());
+
+console.log("--TOLOWERCASE()--");
+/* No se envia parametro para convertir la variable toda en minuscula */
+console.log(nombre.toLowerCase());

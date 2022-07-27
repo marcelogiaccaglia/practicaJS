@@ -2,6 +2,7 @@
 console.log("--VARIABLES--");
 
 /* Las variables pueden contener cadenas de strings, arrays, objetos literales, numeros, booleanos 
+----TODO ES UN OBJETO EN JS Y TODO OBJETO TIENE PROPIEDADES Y METODOS----
 Los identificadores o nombres de una variable pueden inicia con letra, $, _, nunca con numero o otro caracter*/
 
 /* snake_case - uso para nombre archivos (mi_archivo.js)
@@ -32,18 +33,48 @@ console.log(stringQuotes2);
 
 /* Un string es un array de caracteres por lo que podemos conocer o extraer la posicion de cada caracter del mismo */
 
-console.log(fistPosition);
 let fistPosition = stringQuotes2[1];
+console.log(fistPosition);
+
+/* Constructor de un String */
+
+let constructor = new String("Hola");
+console.log(constructor);
 
 /* Esta forma de usar el valor de una variable se denomina interpolacion */
 
 let interpolacion = "Marcelo";
 console.log(
-  `Hola ${nombre}`
-); /* Se deben usar si o si las comillas inclinadas ` ` */
+  `Hola ${interpolacion}`
+); /* Se deben usar si o si las comillas invertidas ` ` */
+
+let interpolacion2 = "Giaccaglia";
+let saludo = `Hola mi apellido es ${interpolacion2} `;
+console.log(saludo);
 
 var numb = [38, 3.5]; /* no se debe ni se usa mas var */
 console.log(numb);
+
+/* ---- Metodos de Numeros ----- */ /* Estudiar los existentes en Mozilla Dev */
+console.log("--Metodos de Numeros--");
+
+let constructorNumb = new Number(23);
+console.log(constructorNumb);
+
+let numb3 = 3.55;
+
+console.log(numb3.toFixed(1));
+console.log(parseInt(numb3));
+
+let numb2 = "23";
+console.log(parseInt(numb2)); // para convertir un numero string en number
+
+/* ----------------------------------------------------------------- */
+
+/* Booleano */ /* Existen Valores que ya por si solo valen True o False, ver documentacion en Mozilla Dev */
+
+let boole = Boolean(true);
+console.log(boole);
 
 const BOLE = true; /*  Es buena practica que las const se le asignen nombres en UPPER_CASE */
 console.log(
@@ -58,6 +89,10 @@ const CAMBIO = {
 CAMBIO.apellido =
   "Giaccaglia"; /* Forma de agregar un valor a un Objeto Literal */
 console.log(CAMBIO);
+
+/* Para conocer el tipo de dato que contiene una variable */
+console.log(typeof BOLE);
+console.log(typeof numb);
 
 /* // ----- Concateneacion ------ // */ console.log("--Concateneacion--");
 
@@ -110,7 +145,7 @@ nan = nan + 2;
 console.log(nan);
 
 let nul = null;
-console.log(nul);
+console.log(nul); // Vacia intencionalemente por el desarrollador
 
 let undefin;
-console.log(undefin);
+console.log(undefin); //Vacia por default

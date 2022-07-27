@@ -2,7 +2,7 @@
 
 /* Las funciones estan compuestas por un nombre, los parametros denominados argumentos, pudiendo no tener argumentos, y una ejecucion entre llaves */
 
-/* Se denomina Declarada cuando se le da un nombre a la funcion */
+/* Se denomina Declarada cuando se le da un nombre a la funcion */ /* No son las mas recomendadas en su uso por que realizan un movimiento dinamico, elevandolas y esto genera que se pueden invocar antes o despues de inicializarlas */
 console.log("--FUNCIONES--");
 
 function presentacion(tex1, tex2) {
@@ -10,7 +10,8 @@ function presentacion(tex1, tex2) {
 }
 console.log(presentacion("Hola", "Mundo"));
 
-//Expresada es cuando esta dentro de una variable//
+//Expresada es cuando esta dentro de una variable// /* No se pueden invocar antes de su inicializacion, evita errores de compilacion y son las mas recomendables * /
+
 /* Se pueden indicar argumentos como default */
 
 let presentation = function (text1 = "hi", text2 = "world") {
@@ -27,7 +28,7 @@ la funcion expresada*/
 
 function crear(num1, num2) {
   let num3 = num1 + num2;
-  return num3;
+  return num3; //Todo lo que sigue luego de un return no es ejecutado
 }
 console.log(crear(num1, 3));
 
