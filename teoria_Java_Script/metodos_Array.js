@@ -1,3 +1,14 @@
+/* ------------ ARRAYS ------------- */
+
+let a = [1, "a", true, [1, 2, 4]];
+console.log(a[1]);
+console.log(a[3][2]); //para llamar a los datos de una array dentro de otro
+
+let arr = new Array(); //propiedad constructora
+
+let ar = Array(50).fill("dato"); //propiedad que crea 50 elementos y le asigna valores
+console.log(ar);
+
 /* ------------ // METODOS ARRAY // ------------ */
 
 let arr1 = ["Marcelo", "Soledad", "Geovanna", "Susana", "Daniel", "Cristian"];
@@ -107,3 +118,10 @@ let arrEvery = par.every((e) => {
   return e % 2 === 0;
 });
 console.log(arrEvery);
+
+console.log("--.FOREACH()--"); //.FOREACH() --
+//Recorre todos los elementos del array mientras ejecuta el callback
+const colores = ["rojo", "verde", "amarillo"];
+colores.forEach(function (e, index) {
+  console.log(`<li id = ${index}>"${e}"<li>`);
+});

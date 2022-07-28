@@ -3,17 +3,29 @@
 /* Los objetos estas compuestos de propiedades "clave : valor" o de metodos que 
   son funciones dentro de un objeto */
 
+const o = new Object(); // Propiedad Constructora
+
 let objetLit = {
   depto: 7,
   piso: 5,
   familia: "Giaccaglia",
+  caracteristicas: ["puerta", "ventana"],
+  otrasCarac: {
+    puerta: "blanca",
+    ventana: "rejas",
+  },
   metodo: function (a = 2, b = 4) {
     return a + b;
   },
 };
 
+console.log(objetLit["familia"]); // forma de acceder a valores
+
 /* Usando el Dot Notation accedemos a las propiedades del objeto literal */
 console.log(objetLit.familia);
+console.log(objetLit.caracteristicas[1]);
+console.log(objetLit.otrasCarac.puerta);
+
 /* Con el Dot Not podemos acceder a un metodo y el mismo lo ejecutamos con () */
 console.log(objetLit.metodo());
 
@@ -28,7 +40,7 @@ let objetLit2 = {
   piso: 5,
   familia: "Giaccaglia",
   metodo: function (a = 2, b = 4) {
-    return a + b + " " + this.familia;
+    return ` ${a + b} ${this.familia} `; // lo mismo que (a + b + " " + this.familia;)
   },
 };
 console.log(objetLit2.metodo());
@@ -49,3 +61,18 @@ function Descartables(producto, marca, precio) {
 
 let bolsaCamiseta = new Descartables("Camiseta Economica", "Cofeco", "$200");
 console.log(bolsaCamiseta);
+
+/* ----------- Metodos de Objetos -------------- */
+
+/* -- .KEYS() */ console.log("-- .KEYS()");
+/* Si queremos conocer todas claves del objetos y asignarlos a un array */
+console.log(Object.keys(objetLit2));
+
+/* -- .VALUES() */ console.log("-- .VALUES()");
+/* Si queremos conocer todos los valores del objetos y asignarlos a un array */
+console.log(Object.values(objetLit2));
+
+/* -- .HASOWNPROPERTY() */ console.log("-- .HASOWNPROPERTY()");
+/* Si queremos saber si existe una propiedad en particular (true o false) */
+console.log(objetLit2.hasOwnProperty("piso"));
+console.log(objetLit2.hasOwnProperty("edificio"));
