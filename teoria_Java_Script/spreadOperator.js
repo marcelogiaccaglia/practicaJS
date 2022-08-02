@@ -37,7 +37,7 @@ mensaje("Hola", "Programadores", "Mundiales");
 
 /* ----- Rest Parameter ---- */ console.log("--Rest Parameter--");
 
-//Sirve para capturar parametros adicionales o de mas que se le envian a una funcion
+/* //Sirve para capturar parametros adicionales o de mas que se le envian a una funcion, este parametro puede ser infinito y puede o no ser enviada, no es obligatorio */
 
 function miFuncion(param1, param2, ...paramOtros) {
   console.log(paramOtros);

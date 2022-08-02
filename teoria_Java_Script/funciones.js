@@ -36,6 +36,7 @@ console.log(crear(num1, 3));
 console.log("--ARROW FUNCTION--");
 
 /* Tiene una sintaxis mas compacta y siempre tiene q estar declarada dentro de una variable */
+/* NO SE DEBE USAR ARROW FUNCTION EN METDOS DE OBJETOS LITERALES */
 
 /* sintaxis principal */
 

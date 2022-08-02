@@ -45,6 +45,26 @@ let objetLit2 = {
 };
 console.log(objetLit2.metodo());
 
+/* Nueva forma de crear objetos literales */ /* NO SE DEBE USAR ARROW FUNCTION EN METDOS DE OBJETOS LITERALES */ console.log(
+  "Nueva Forma de Codigo"
+);
+
+let name = "Marcelo";
+let lastName = "Giaccaglia";
+
+let dni = {
+  name,
+  lastName,
+  d_n_i: 30819354,
+  documento() {
+    console.log(
+      `Mi documento dice ${this.name} ${this.lastName} con ${this.d_n_i}`
+    );
+  },
+};
+
+dni.documento();
+
 /* ------- // Construccion de Objetos // ------------ */
 
 /* Se debe utilizar una funcion constructora de Objetos, este es un molde, donde cada parametro es una propiedad del objeto a crear */
