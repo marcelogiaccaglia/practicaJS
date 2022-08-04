@@ -67,20 +67,7 @@ dni.documento();
 
 /* ------- // Construccion de Objetos // ------------ */
 
-/* Se debe utilizar una funcion constructora de Objetos, este es un molde, donde cada parametro es una propiedad del objeto a crear */
-
-function Descartables(producto, marca, precio) {
-  this.producto = producto;
-  this.marca = marca;
-  this.precio = precio;
-}
-
-/* El nombre de la funcion es la que usaremos para llamar para la construccion, buena practica es iniciar con mayuscula -- Los parametros seran las propiedades del Objeto -- Con la logica del cuerpo es la que generara clave y valores al Objeto */
-
-//Instanciar a un Objeto
-
-let bolsaCamiseta = new Descartables("Camiseta Economica", "Cofeco", "$200");
-console.log(bolsaCamiseta);
+// Ver archivo prototype_Class.js
 
 /* ----------- Metodos de Objetos -------------- */
 

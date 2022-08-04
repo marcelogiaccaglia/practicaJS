@@ -78,3 +78,15 @@ if (24 > 20 || 20 < 3) {
 if (!24 < 20) {
   console.log("asi es NOT");
 }
+
+/* -------- Operadores de Cortocircuito ---------------- */
+
+// ------ OR ------- Siempre se ejecutara el primer valor si es True o Truty
+
+console.log(19 || "Valor ejecutable si es False");
+console.log(true || "Valor ejecutable si es False");
+
+// -------- AND -------Siempre se ejecutara el primer valor si es False o Falsy
+
+console.log(0 && "Valor ejecutable si es true");
+console.log(false && "Valor ejecutable si es true");
