@@ -82,3 +82,17 @@ function saludar(nombre, apellido, callback) {
 
 console.log(saludar("Juanito", "Sanchez", nombreCompleto));
 console.log(saludar("Juanito", "Sanchez", iniciales));
+
+/* ---------- // FUNCIONES ANONIMAS AUTOEJECUTABLES // -------------- */
+console.log("--FUNCIONES ANONIMAS AUTOEJECUTABLES--");
+
+/* Como su titulo lo indica, son funciones sin nombre y englobadas con parametros especificos para autoejecutarse solos */
+
+/* ---- Funcion A.A. Clasica ---- */
+(function (n, a) {
+  console.log(`Hola mi nombre es ${n} y apellido ${a}`);
+})("Marcelo", "Giaccaglia");
+
+/* Funcion Crockford -- ((function () {})()); */
+/* Funcion Unaria -- +function () {}(); */
+/* Funcion Facebook -- !function () {}(); */
