@@ -70,6 +70,38 @@ console.log("--.INCLUDES()--"); //.INCLUDES() --
 let arrIncludes = arr2.includes("Geovanna");
 console.log(arrIncludes);
 
+/* ---- Eliminar elementos del Arrays ------- */
+
+console.log("--.SPLICE()--"); //.SPLICE() --
+//Se indica la posicion como parametro a eliminar, parametro opcional le sigue la cantidad, este metodo modifica el array original (Array.splice(index, count,...)
+let myArray = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Rick" },
+  { id: 3, name: "Anna" },
+];
+myArray.splice(0, 1);
+console.log(myArray); //elimina el primer elemento
+
+console.log("--.SLICE()--"); //.SLICE() --
+//Clona los elementos seleccionado, donde se le da como 1° parametro la posicion inicial y el 2° param es la posicion final (default es 0 y .length) (Array.slice(StartIndex, endIndex)
+let arrSlice = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Rick" },
+  { id: 3, name: "Anna" },
+];
+arrSlice.slice(1, 3);
+console.log(arrSlice); //no modifica el original
+
+console.log("--.FILTER()--"); //.FILTER() --
+//Este metodo recibe un callback, donde la funcion a pasar filtra dependiendo de la condicion, creando un nuevo array
+let arrFilter = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Rick" },
+  { id: 3, name: "Anna" },
+];
+let newArray = arrFilter.filter((item) => item.id !== 1);
+console.log(newArray);
+
 /* ---- Fusionar Arrays ------- */
 
 console.log("--.PUSH()--"); // Con el uso de .PUSH -- (array a fusionar)
