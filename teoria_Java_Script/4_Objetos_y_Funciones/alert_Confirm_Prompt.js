@@ -2,6 +2,8 @@
 
 //Para que el objeto Windows nos de una aleta donde solo podemos aceptar
 
+/* Utilizar framework sweet alert para alertas con estilos */
+
 let alerta = window.alert("Hola soy una alerta");
 // es lo mismo - alert("");
 
