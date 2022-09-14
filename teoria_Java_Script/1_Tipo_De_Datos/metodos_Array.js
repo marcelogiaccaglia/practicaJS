@@ -6,6 +6,8 @@ console.log(a[3][2]); //para llamar a los datos de una array dentro de otro
 
 let arr = new Array(); //propiedad constructora
 
+/* Array.from() este es una propiedad del objeto array que convierte cualquier objeto iterable en un array, por ejemplo transformar un ser en un array (ver apartado SET.js) */
+
 let ar = Array(50).fill("dato"); //propiedad que crea 50 elementos y le asigna valores
 console.log(ar);
 
