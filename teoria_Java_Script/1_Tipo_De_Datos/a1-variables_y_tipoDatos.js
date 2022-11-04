@@ -46,7 +46,7 @@ console.log(constructor);
 let interpolacion = "Marcelo";
 console.log(
   `Hola ${interpolacion}`
-); /* Se deben usar si o si las comillas invertidas ` ` */
+); /* Se deben usar si o si las comillas invertidas ` ` o alt+96 */
 
 let interpolacion2 = "Giaccaglia";
 let saludo = `Hola mi apellido es ${interpolacion2} `;
