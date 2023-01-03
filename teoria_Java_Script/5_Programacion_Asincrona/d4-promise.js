@@ -37,11 +37,11 @@ cuadradoPromise(0)
   })
   .then((obj) => {
     console.log(`Promise: ${obj.value}, ${obj.result}`);
-    return cuadradoPromise(3);
+    return cuadradoPromise("3");
   })
   .then((obj) => {
     console.log(`Promise: ${obj.value}, ${obj.result}`);
-    return cuadradoPromise("4");
+    return cuadradoPromise(4);
   })
   /* Ya en este caso al ejecutarse el return la respuesta externa es FALSE por lo que se ejecuta el .catch() definido al final del codigo */
   .then((obj) => {

@@ -1,0 +1,61 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Marcelo",
+      "ocupacion": "Developer"
+    },
+    {
+      "id": 2,
+      "nombre": "Soledad",
+      "ocupacion": "Teacher"
+    },
+    {
+      "id": 3,
+      "nombre": "Daniel",
+      "ocupacion": "Programmer"
+    },
+    {
+      "id": 4,
+      "nombre": "Susana",
+      "ocupacion": "Owner"
+    },
+    {
+      "id": 5,
+      "nombre": "Geovanna",
+      "ocupacion": "baby"
+    },
+    {
+      "nombre": "Cristian",
+      "ocupacion": "Employee",
+      "id": 6
+    },
+    {
+      "nombre": "Alejandro",
+      "ocupacion": "Vendor",
+      "id": 7
+    }
+  ],
+  "amigos": [
+    {
+      "id": 1,
+      "nombre": "Cristian",
+      "ocupacion": "Contador"
+    },
+    {
+      "id": 2,
+      "nombre": "Evangelina",
+      "ocupacion": "Doctora"
+    },
+    {
+      "id": 3,
+      "nombre": "Miguel",
+      "ocupacion": "Dueño"
+    },
+    {
+      "id": 4,
+      "nombre": "Nataly",
+      "ocupacion": "Empleada"
+    }
+  ]
+}

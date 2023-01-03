@@ -5,7 +5,7 @@
 La misma utiliza el resolve y el reject de la funcion de Promise y luego se utilizara la funcion try - catch*/
 
 function cuadradoPromise(value) {
-  /* Se crea una funcion donde lo primero es utilizar un condicional que atrape el error con reject para el caso de el parametro sea False */
+  /* Se crea una funcion donde lo primero es utilizar un condicional que atrape el error con reject del Objeto Promise para el caso de el parametro sea False */
   if (typeof value !== "number") {
     return Promise.reject(
       `Error, el valor " ${value} " ingresado no es un número`
@@ -38,7 +38,7 @@ async function funcionAsincronaDeclarada() {
 
     obj = await cuadradoPromise("3");
     console.log(`Async Function: ${obj.value}, ${obj.result}`);
-    /* Para este caso el valor entregado como parametro es FALSE por lo que se ejecuta el callback de reject para que lo atrape el catchy nos imprima el error */
+    /* Para este caso el valor entregado como parametro es FALSE por lo que se ejecuta el callback de reject para que lo atrape el catch y nos imprima el error */
     console.log("Fin Async Function");
   } catch (err) {
     console.error(err);

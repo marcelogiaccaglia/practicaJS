@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD API REST Fetch</title>
+  </head>
+  <body>
+    <h1>CRUD API REST Fetch</h1>
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">AGREGAR USUARIOS</h2>
+        <form class="crud-form" action="">
+          <input
+            type="text"
+            name="nombre"
+            id=""
+            placeholder="nombre"
+            required
+          />
+          <input
+            type="text"
+            name="ocupacion"
+            id=""
+            placeholder="ocupacion"
+            required
+          />
+          <button type="submit">Enviar</button>
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+      <article>
+        <h2>VER USUARIOS</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Ocupacion</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <template id="crud-template">
+      <tr>
+        <td class="nombre"></td>
+        <td class="ocupacion"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+    <script src="4d-crud_REST_Fetch.js"></script>
+  </body>
+</html>
