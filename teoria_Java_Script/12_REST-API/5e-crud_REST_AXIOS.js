@@ -1,3 +1,7 @@
+/* Instalamos Axios con npm i axios o pegamos en html el scipt del CDN <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+Sobre el metodo axios utilizamos la estructura de metodos de .get(URL de la API) .then(res) .catch(err) .finally(opcional), El CDN de Axios lo obtenemos del GIT Hub de axios*/
+/* No olvidar de ejecutar el JSON server */
+
 const d = document,
   $table = d.querySelector(".crud-table"),
   $form = d.querySelector(".crud-form"),
@@ -6,18 +10,22 @@ const d = document,
   $fragment = d.createDocumentFragment();
 
 const getAll = async () => {
+  /* Esta funcion expresada trabajara en forma asincrona con los metodos Try- Catch */
   try {
+    /* Creamos la primera varibale que contiene la respuesta de axios */
     let res = await axios.get("http://localhost:5555/santos"),
+      /* Creamos otra variable que nos trae la informacion ya en formato JSON */
       json = await res.data;
 
     console.log(json);
 
     json.forEach((el) => {
       $template.querySelector(".name").textContent = el.nombre;
-      $template.querySelector(".constellation").textContent = el.constelacion;
+      $template.querySelector(".ocupacion").textContent = el.ocupacion;
+      /* Sobre la clase edit utilizamos un data atribute (dataset) donde dentro del mismo almacenamos la informacion para luego ser usada para que la misma la podamos enviar al formulario para su edicion */
       $template.querySelector(".edit").dataset.id = el.id;
-      $template.querySelector(".edit").dataset.name = el.nombre;
-      $template.querySelector(".edit").dataset.constellation = el.constelacion;
+      $template.querySelector(".edit").dataset.nombre = el.nombre;
+      $template.querySelector(".edit").dataset.ocupacion = el.ocupacion;
       $template.querySelector(".delete").dataset.id = el.id;
 
       let $clone = d.importNode($template, true);
@@ -34,12 +42,16 @@ const getAll = async () => {
   }
 };
 
-d.addEventListener("DOMContentLoaded", getAll);
+d.addEventListener(
+  "DOMContentLoaded",
+  getAll
+); /* En el momento que el documento cargue por completo se ejecutara la funcion declarada getAll */
 
 d.addEventListener("submit", async (e) => {
+  /*Si el evento se genera en el formulario se ejecuta el codigo siguiente */
   if (e.target === $form) {
     e.preventDefault();
-
+    /*Si el value de id viene vacio se ejecuta el codigo de POST, caso contrario se ejecuta PUT*/
     if (!e.target.id.value) {
       //Create - POST
       try {
@@ -54,6 +66,7 @@ d.addEventListener("submit", async (e) => {
             }),
           },
           res = await axios("http://localhost:5555/santos", options),
+          /*Se coloca solo axios ya que el metodo esta epecificado dentro de la variable options*/
           json = await res.data;
 
         location.reload();
